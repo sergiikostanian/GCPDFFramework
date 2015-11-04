@@ -10,6 +10,6 @@ path_to_project = "ScriptTest.xcodeproj"
 project = Xcodeproj::Project.open(path_to_project)
 
 main_target = project.targets.first
-phase = main_target.new_shell_script_build_phase("TODO:")
-phase.shell_script = "do sth with ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/your.file"
+phase = main_target.new_shell_script_build_phase("GC Script")
+phase.shell_script = ""
 project.save()
