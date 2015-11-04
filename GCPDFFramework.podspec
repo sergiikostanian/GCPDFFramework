@@ -12,7 +12,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/sergiikostanian/GCPDFFramework.git", :tag => "0.0.1" }
   s.source_files  = “Framework”, “ScriptTest/Framework/**/*.{h,m}”
 
-  s.prepare_command = 'ruby prepare_build_phase_script.rb'
   s.requires_arc = true  
 
 end
