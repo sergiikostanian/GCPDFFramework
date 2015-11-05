@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 						cd "$current_pwd"
 						project_file=`find "$project_dir" -maxdepth 1 -name "*.xcodeproj" | tail -1`
 			
-						ruby prepare_build_phase_script.rb project_file
+						ruby prepare_build_phase_script.rb "$project_file"
                    CMD
                    
 end
