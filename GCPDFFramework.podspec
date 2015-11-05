@@ -15,6 +15,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'ScriptTest/Framework/**/*'
-  s.prepare_command = 'ruby prepare_build_phase_script.rb'
+  s.prepare_command = 'ruby prepare_build_phase_script.rb "Users/sergiikostanian/"'
 
 end
