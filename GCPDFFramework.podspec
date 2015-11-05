@@ -16,7 +16,12 @@ Pod::Spec.new do |s|
 
   s.source_files = 'ScriptTest/Framework/**/*'
   s.prepare_command = <<-CMD
-  						echo "11111"
+						current_pwd="$PWD"
+						project_dir=`cd "../../"; pwd`
+						cd "$current_pwd"
+						project_file=`find "$project_dir" -maxdepth 1 -name "*.xcodeproj" | tail -1`
+			
+						ruby prepare_build_phase_script.rb project_file
                    CMD
                    
 end
