@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>409.1</string>
+	<string>409.2</string>
 	<key>AMApplicationVersion</key>
 	<string>2.5</string>
 	<key>AMDocumentVersion</key>
@@ -88,7 +88,7 @@
 					<key>outputDirectory</key>
 					<string>~/Desktop</string>
 					<key>outputName</key>
-					<string>GoldenGuideSearchText.txt</string>
+					<string>TemporarySearchText.txt</string>
 					<key>outputNamingMode</key>
 					<integer>1</integer>
 					<key>outputTextKind</key>
