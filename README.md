@@ -4,8 +4,7 @@
 
 Add to Podfile 
 
-<pre><code>
-pod 'GCPDFFramework', :git => 'https://github.com/sergiikostanian/GCPDFFramework.git'
+<pre><code>pod 'GCPDFFramework', :git => 'https://github.com/sergiikostanian/GCPDFFramework.git'
 
 post_install do |installer|
     
@@ -34,14 +33,11 @@ done"
         project.save()
     end
     
-end
-</code></pre>
+end</code></pre>
 
-In <b>pdfFolderSubPath</b> you should type sub path to folder with your PDF files starting from your project folder
+In <b>pdfFolderSubPath</b> you should type sub path to folder with your PDF files starting from your project folder<br/>
 In <b>xcodeprojFileName</b> you should type xcodeproj file name with extention
 
 For example:
-<pre><code>
-pdfFolderSubPath = "MyProject/FolderWithPDFs"
-xcodeprojFileName = "MyProject.xcodeproj"
-</code></pre>
+<pre><code>pdfFolderSubPath = "MyProject/FolderWithPDFs"
+xcodeprojFileName = "MyProject.xcodeproj"</code></pre>
