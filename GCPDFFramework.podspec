@@ -14,14 +14,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'ScriptTest/Framework/**/*'
-  s.prepare_command = <<-CMD
-						current_pwd="$PWD"
-						project_dir=`cd "../../"; pwd`
-						cd "$current_pwd"
-						project_file=`find "$project_dir" -maxdepth 1 -name "*.xcodeproj" | tail -1`
-			
-						ruby prepare_build_phase_script.rb $project_file
-                   CMD
+  s.source_files = 'ScriptTest/Framework/**/*.{h,m}'
+  s.resource = "MAG.ScriptTest/resources.bundle"
                    
 end
