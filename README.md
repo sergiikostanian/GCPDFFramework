@@ -9,8 +9,8 @@ Add to Podfile
 post_install do |installer|
     
     shellScriptName = "Genegate PDF Search Indexes"
-    pdfFolderSubPath = "<type_sub_path_to_pdf_folder>"
-    xcodeprojFileName = "<type_xcodeproj_file_name>"
+    pdfFolderSubPath = "..."
+    xcodeprojFileName = "..."
     
     project = Xcodeproj::Project.open(xcodeprojFileName)
     mainTarget = project.targets.first
